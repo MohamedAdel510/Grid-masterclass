@@ -1,0 +1,481 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-light-color:#9FA3A7;
+    --font-dark-color: #333;
+    --ment-green-color:#27b9c2;
+    --secondery-font-family: Montserrat, sans-serif;
+    --primary-font-family: 'Arvo', sans-serif;
+    --tittle-font-size: 12px;
+    --heading-0-font-size: 22px;
+    --heading-0-line-height: 32px;
+    /* --discribtion-font-size: 24px; */
+}
+
+
+@font-face {
+    font-family: Arvo;
+    src: url(../fonts/Arvo-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Arvo;
+    src: url(../fonts/Arvo-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: Arvo;
+    src: url(../fonts/Arvo-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Arvo;
+    src: url(../fonts/Arvo-Regular.ttf);
+    font-weight: 400;
+}
+
+
+.gallary{
+    display: grid;
+        
+    grid-template-areas: 
+
+        "rotary "
+        "iphone "
+        "keybord"
+        "game   "
+        "imac   "
+        "twitter"
+        "best   "
+        "icloud "
+        "popular"
+        "tv     "
+    
+    ; 
+
+    grid-template-columns: repeat(1, 1fr);
+
+    font-family: var(--primary-font-family);
+    color: var(--font-dark-color);
+}
+
+
+.iphone-6S{
+    /* background-color: gray; */
+    grid-area:  iphone;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.info{
+    /* background-color: orange; */
+    width: 75%;
+}
+
+
+h3.heading-0, h3.heading-1{
+    /* background-color: red; */
+    font-family: Arvo, sans-serif;
+    font-size: var(--heading-0-font-size);
+    line-height: var(--heading-0-line-height);
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+p.main-paragrph{
+    font-family: var(--secondery-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-light-color);
+}
+
+.iphone-image{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.iphone-image img{
+    width: 50%;
+    
+}
+
+
+
+.rotary{
+    background-color:  #f1f1f1;
+    grid-area:  rotary;
+    padding: 50px 0px;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tittle, a.arrow-link{
+    font-family: var(--secondery-font-family);
+    color: var(--font-light-color);
+    font-size: var(--tittle-font-size);
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+.rotary h1{
+    font-size: 10vw;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.rotary a{
+    font-family: var(--secondery-font-family);
+    color: var(--ment-green-color);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.keyboard{
+    background-color: #F05638;
+    grid-area:  keybord;
+    text-align: center;
+
+    padding: 50px 0px;
+}
+
+.keyboard img{
+    width: 70%;
+}
+
+h3.heading-1{
+    /* background-color: orange; */
+    color: white;
+    font-weight: 700;
+}
+
+.keyboard h3{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.arrow-link{
+    text-decoration: none;
+    color: #FEBF1C;
+}
+
+
+.imac{
+    grid-area:  imac;
+    /* background-color: gray; */
+    padding: 50px 0px;
+    overflow: hidden;
+
+}
+
+.imac-info{
+    /* background-color: orange; */
+}
+
+.imac-image{
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+
+.imac img{
+    width: 150%;
+    
+    margin-top: 30px;
+
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+
+}
+
+.imac-left-part{
+    /* background-color: blue; */
+    
+}
+
+.imac-details{
+    /* background-color: blueviolet; */
+    
+}
+
+.imac-details p{
+    margin: 30px 0px;
+}
+
+.imac-details a{
+    color: var(--ment-green-color);
+}
+
+
+
+
+.icloud{
+    background-color: #8F76BC;
+    grid-area:  icloud;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.icloud-image{
+    background-color: #8C6BAE;
+    width: 370px;
+    height: 370px;
+    margin: auto;
+
+    font-display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icloud-image .tittle{
+    color: white;
+    font-size: 10px;
+    background-color: #8F76BC;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tittle i{
+    color: #FEC318;
+}
+
+.icloud-image img{
+    width: 60%;
+}
+
+.icloud-info{
+    /* background-color: blue; */
+    
+}
+
+.icloud-info .heading-1{
+    font-size: 28px;
+}
+
+.icloud-info p{
+    color: white;
+    width: 60%;
+    line-height: 1.5;
+    margin: 15px auto;
+}
+
+.icloud-info a{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: var(--font-dark-color);
+    background-color: #FEC318;
+    font-size: 12px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.games{
+    /* background-color: orange; */
+    grid-area:  game;
+    text-align: center;
+    padding: 50px 0px;
+    
+}
+
+.games img{
+    width: 70%;
+    /* background-color: orange; */
+    transform: translateX(-15%);
+    -webkit-transform: translateX(-15%);
+    -moz-transform: translateX(-15%);
+    -ms-transform: translateX(-15%);
+    -o-transform: translateX(-15%);
+
+}
+
+
+
+
+
+
+
+.best-choice{
+    background-color: #93B6B7;
+    grid-area:  best;
+    /* text-align: center; */
+}
+.best-choice .tittle{
+    color: white;
+    font-size: 8px;
+    background-color: #F05638;
+    width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    padding: 0px 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.best-choice .heading-1{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.ipad-image h4{
+    font-size: 50vw;
+    margin: 0;
+    text-align: center;
+    color: #95A8A9;
+}
+
+.ipad-image{
+    display: flex;
+    align-items: flex-end;
+    /* position: relative; */
+}
+
+.ipad-image img{
+    width: 80%;
+    margin-top: 30px;
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+
+
+
+
+
+
+
+
+
+.twitter{
+    background-color: #38D5F4;
+    grid-area:  twitter;
+
+    text-align: center
+}
+.twitter-content{
+    background-color: #48CAE59c;
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.twitter-content img{
+    /* background-color: orange; */
+    width: 25%;
+}
+
+.twitter h3{
+    color: white;
+    padding: 15px ;
+    /* margin: 0px; */
+}
+
+
+
+.popular{
+    /* background-color: orange; */
+    grid-area:  popular;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.popular .tittle{
+    color: white;
+    font-size: 10px;
+    background-color: #87C02F;
+    width: fit-content;
+    margin: auto;
+    padding: 0px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tv{
+    background-color: #2C2C2C;
+    grid-area:  tv;
+    text-align: center;
+}
+
+.tv img{
+    width: 50%;
+    overflow: hidden;
+    transform: translate(-25%);
+    -webkit-transform: translate(-25%);
+    -moz-transform: translate(-25%);
+    -ms-transform: translate(-25%);
+    -o-transform: translate(-25%);
+}
+
+.tv h3{
+    color: white;
+}
+
+
+

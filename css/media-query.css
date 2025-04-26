@@ -1,0 +1,139 @@
+
+@media screen and (min-width: 479px){
+    .gallary{
+        display: grid;
+        
+        grid-template-areas: 
+
+            "rotary    rotary"
+            "iphone    iphone"
+            "keybord   game"
+            "imac      imac"
+            "twitter   icloud"
+            "best      icloud"
+            "popular   popular"
+            "tv        tv"
+        ; 
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iphone-6S{
+        display: flex;
+        align-items: center;
+    }
+
+    .info{
+        width: 50%;
+        /* padding: 40px; */
+    }
+
+    .iphone-image{
+        width: 50%;
+    }
+    
+
+    .iphone-image img{
+        width: 100%;
+    }
+
+
+    h3.heading-0, h3.heading-1{
+        /* font-size: 34px; */
+        line-height: 40px;
+        margin: 30px auto;
+    }
+    
+    p.main-paragrph{
+        /* font-size: 24px; */
+    }
+
+    .tittle, a.arrow-link{
+        /* font-size: 18px; */
+    }
+
+
+    .keyboard h3{
+        width: 60%;
+    }
+
+    .imac{
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 0px;
+
+    }
+
+    .imac img{
+        /* background-color: aqua; */
+        /* width: 300%; */
+        transform: translateX(-55%);
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        -ms-transform: translateX(-55%);
+        -o-transform: translateX(-55%);
+}
+
+    .imac-left-part{
+        width: 50%;
+    }
+    
+    .imac-details{
+        width: 50%;
+        padding-left: 30px;
+        
+    }
+
+    .imac-details p{
+        /* font-size: 28px; */
+        line-height: 1.5;
+    }    
+
+}
+
+@media screen and (min-width: 992px){
+
+    .gallary{
+        display: grid;
+    
+        /* 4 columns , 7 rows*/
+        grid-template-areas: 
+        "iphone    iphone   rotary  rotary"
+        "iphone    iphone   rotary  rotary"
+        "keybord   imac     imac    icloud"
+        "keybord   imac     imac    icloud"
+        "game      best     best    icloud"
+        "game      best     best    icloud"
+        "twitter   popular  tv      tv"; 
+    
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .rotary h1{
+        font-size: 48px;
+       padding: 0px 50px;
+    }
+
+    .tv{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .tv img{
+        /* background-color: orange; */
+        width: 30%;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+
+    .tv h3{
+        width: 30%;
+        /* background-color: blue; */
+        text-align: left;
+    }
+}
